@@ -313,9 +313,9 @@ body[data-nav="dark"] .logo-mark { background-color: var(--navy); }
 .seal-label {
   font-family: 'Outfit', sans-serif;
   font-weight: 800;
-  font-size: 19px;
+  font-size: 16px;
   fill: white;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 @keyframes spin {
   from { transform: rotate(0deg); }
