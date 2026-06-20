@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agencia GO — Todo lo que tu marca necesita en un solo lugar</title>
+<meta name="description" content="Branding, producción de contenido, redes sociales, publicidad digital y desarrollo web. Agencia GO: todo lo que tu marca necesita, en un solo lugar.">
+<link rel="icon" type="image/png" href="go-logo-clean.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body>
+
+<!-- ============================ SVG DEFS (reusable bubble + scallop) ============================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Puffy cloud bubble shape — sin gaps internos -->
+    <symbol id="bubble" viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet" overflow="visible">
+      <!-- relleno interior para cerrar gaps entre bumps -->
+      <rect x="28" y="38" width="304" height="64"/>
+      <!-- 7 top bumps -->
+      <circle cx="32"  cy="52" r="32"/>
+      <circle cx="80"  cy="42" r="36"/>
+      <circle cx="128" cy="42" r="36"/>
+      <circle cx="180" cy="42" r="36"/>
+      <circle cx="232" cy="42" r="36"/>
+      <circle cx="280" cy="42" r="36"/>
+      <circle cx="328" cy="52" r="32"/>
+      <!-- 7 bottom bumps -->
+      <circle cx="32"  cy="88" r="32"/>
+      <circle cx="80"  cy="98" r="36"/>
+      <circle cx="128" cy="98" r="36"/>
+      <circle cx="180" cy="98" r="36"/>
+      <circle cx="232" cy="98" r="36"/>
+      <circle cx="280" cy="98" r="36"/>
+      <circle cx="328" cy="88" r="32"/>
+    </symbol>
+
+    <!-- Wider bubble for long strings -->
+    <symbol id="bubble-wide" viewBox="0 0 540 200" preserveAspectRatio="xMidYMid meet" overflow="visible">
+      <circle cx="55"  cy="75" r="48"/>
+      <circle cx="120" cy="62" r="55"/>
+      <circle cx="185" cy="62" r="55"/>
+      <circle cx="250" cy="62" r="55"/>
+      <circle cx="315" cy="62" r="55"/>
+      <circle cx="380" cy="62" r="55"/>
+      <circle cx="445" cy="62" r="55"/>
+      <circle cx="495" cy="75" r="48"/>
+      <circle cx="55"  cy="125" r="48"/>
+      <circle cx="120" cy="138" r="55"/>
+      <circle cx="185" cy="138" r="55"/>
+      <circle cx="250" cy="138" r="55"/>
+      <circle cx="315" cy="138" r="55"/>
+      <circle cx="380" cy="138" r="55"/>
+      <circle cx="445" cy="138" r="55"/>
+      <circle cx="495" cy="125" r="48"/>
+    </symbol>
+
+    <!-- Scallop edge — half-circles bulging UP. Position at bottom of section. -->
+    <symbol id="scallop" viewBox="0 0 1440 60" preserveAspectRatio="none">
+      <circle cx="30"   cy="60" r="32"/>
+      <circle cx="90"   cy="60" r="32"/>
+      <circle cx="150"  cy="60" r="32"/>
+      <circle cx="210"  cy="60" r="32"/>
+      <circle cx="270"  cy="60" r="32"/>
+      <circle cx="330"  cy="60" r="32"/>
+      <circle cx="390"  cy="60" r="32"/>
+      <circle cx="450"  cy="60" r="32"/>
+      <circle cx="510"  cy="60" r="32"/>
+      <circle cx="570"  cy="60" r="32"/>
+      <circle cx="630"  cy="60" r="32"/>
+      <circle cx="690"  cy="60" r="32"/>
+      <circle cx="750"  cy="60" r="32"/>
+      <circle cx="810"  cy="60" r="32"/>
+      <circle cx="870"  cy="60" r="32"/>
+      <circle cx="930"  cy="60" r="32"/>
+      <circle cx="990"  cy="60" r="32"/>
+      <circle cx="1050" cy="60" r="32"/>
+      <circle cx="1110" cy="60" r="32"/>
+      <circle cx="1170" cy="60" r="32"/>
+      <circle cx="1230" cy="60" r="32"/>
+      <circle cx="1290" cy="60" r="32"/>
+      <circle cx="1350" cy="60" r="32"/>
+      <circle cx="1410" cy="60" r="32"/>
+    </symbol>
+
+    <!-- Award seal — sunburst (24 rays) with star -->
+    <polygon id="ray" points="0,-118 -7,-82 7,-82"/>
+    <symbol id="seal" viewBox="0 0 240 240">
+      <g transform="translate(120 120)" fill="#D5CBFF">
+        <use href="#ray"/>
+        <use href="#ray" transform="rotate(15)"/>
+        <use href="#ray" transform="rotate(30)"/>
+        <use href="#ray" transform="rotate(45)"/>
+        <use href="#ray" transform="rotate(60)"/>
+        <use href="#ray" transform="rotate(75)"/>
+        <use href="#ray" transform="rotate(90)"/>
+        <use href="#ray" transform="rotate(105)"/>
+        <use href="#ray" transform="rotate(120)"/>
+        <use href="#ray" transform="rotate(135)"/>
+        <use href="#ray" transform="rotate(150)"/>
+        <use href="#ray" transform="rotate(165)"/>
+        <use href="#ray" transform="rotate(180)"/>
+        <use href="#ray" transform="rotate(195)"/>
+        <use href="#ray" transform="rotate(210)"/>
+        <use href="#ray" transform="rotate(225)"/>
+        <use href="#ray" transform="rotate(240)"/>
+        <use href="#ray" transform="rotate(255)"/>
+        <use href="#ray" transform="rotate(270)"/>
+        <use href="#ray" transform="rotate(285)"/>
+        <use href="#ray" transform="rotate(300)"/>
+        <use href="#ray" transform="rotate(315)"/>
+        <use href="#ray" transform="rotate(330)"/>
+        <use href="#ray" transform="rotate(345)"/>
+      </g>
+      <circle cx="120" cy="120" r="78" fill="#D5CBFF"/>
+      <path d="M120,68 L131,109 L172,120 L131,131 L120,172 L109,131 L68,120 L109,109 Z" fill="#fff"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============================== NAV ============================== -->
+<nav class="main-nav">
+  <a href="#" class="nav-logo" aria-label="Agencia GO">
+    <span class="logo-mark"></span>
+  </a>
+  <ul class="nav-links">
+    <li class="has-drop"><a href="#">Páginas <span class="plus">+</span></a></li>
+    <li><a href="#services">Servicios</a></li>
+    <li><a href="#about">Nosotros</a></li>
+    <li><a href="#blog">Blog</a></li>
+  </ul>
+  <a href="https://wa.me/5491162355394?text=Hola%20Agencia%20GO%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener" class="nav-cta">Hablemos →</a>
+</nav>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" data-bg="dark">
+  <div class="dot-bg"></div>
+
+  <!-- Sparkles -->
+  <svg class="spark spark-1" viewBox="0 0 40 40"><path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#fff"/></svg>
+  <svg class="spark spark-2" viewBox="0 0 40 40"><path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#B9AAFF"/></svg>
+  <svg class="spark spark-3" viewBox="0 0 40 40"><path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#fff"/></svg>
+
+  <h1 class="hero-headline">
+    <span class="line">HACEMOS QUE</span>
+    <span class="line">TU MARCA SEA</span>
+    <span class="line line-bottom">MEMORABLE</span>
+  </h1>
+
+  <!-- Bottom CTA bar -->
+  <div class="hero-bottom">
+    <div class="hero-bottom-left">
+      <div class="brand-logo">AGENCIA<br>GO<br>STUDIO.</div>
+      <a href="https://wa.me/5491162355394?text=Hola%20Agencia%20GO%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener" class="pill-btn pill-white pill-hero">Hablemos →</a>
+    </div>
+
+    <div class="award-seal">
+      <!-- Mascota GO (cabeza) -->
+      <svg class="globe" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="78" fill="#B9AAFF" stroke="#181351" stroke-width="3"/>
+        <clipPath id="sealMascotHero"><circle cx="100" cy="100" r="76"/></clipPath>
+        <g clip-path="url(#sealMascotHero)">
+          <g fill="#181351">
+            <path d="M48 50 q 18 -8 26 6 q 8 14 -2 26 q 12 16 -2 32 q -18 10 -28 -6 q -10 -24 0 -44 q 2 -14 6 -14 z"/>
+            <path d="M150 42 q 22 6 22 28 q -2 14 -16 20 q 10 18 -6 28 q -16 0 -16 -22 q -8 -22 12 -38 q 8 -12 18 -12 z"/>
+            <path d="M100 156 q 16 -2 18 12 q -2 12 -18 12 q -16 0 -18 -12 q 4 -12 18 -12 z"/>
+          </g>
+          <g fill="none" stroke="#181351" stroke-width="2.2" opacity="0.26">
+            <ellipse cx="100" cy="100" rx="76" ry="32"/>
+            <ellipse cx="100" cy="100" rx="76" ry="58"/>
+            <ellipse cx="100" cy="100" rx="34" ry="76"/>
+            <line x1="24" y1="100" x2="176" y2="100"/>
+          </g>
+          <path d="M100 28 a 76 76 0 0 1 0 152 a 56 60 0 0 0 0 -152 z" fill="#8D7AFF" opacity="0.36"/>
+          <ellipse cx="64" cy="62" rx="26" ry="18" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 64 62)"/>
+          <circle cx="52" cy="52" r="6" fill="#F4F1FF" opacity="0.9"/>
+        </g>
+        <path d="M56 72 q 14 -11 30 -4" fill="none" stroke="#181351" stroke-width="6" stroke-linecap="round"/>
+        <path d="M114 70 q 16 -7 30 6" fill="none" stroke="#181351" stroke-width="6" stroke-linecap="round"/>
+        <ellipse cx="78" cy="100" rx="18" ry="22" fill="#F4F1FF" stroke="#181351" stroke-width="5"/>
+        <ellipse cx="122" cy="100" rx="18" ry="22" fill="#F4F1FF" stroke="#181351" stroke-width="5"/>
+        <circle cx="84" cy="103" r="9" fill="#181351"/>
+        <circle cx="128" cy="103" r="9" fill="#181351"/>
+        <circle cx="87.5" cy="98" r="3.4" fill="#F4F1FF"/>
+        <circle cx="131.5" cy="98" r="3.4" fill="#F4F1FF"/>
+        <path d="M80 138 Q 100 152, 120 138" fill="none" stroke="#181351" stroke-width="5.5" stroke-linecap="round"/>
+      </svg>
+      <!-- Rotating "AGENCIA GO" around the globe -->
+      <svg class="seal-text" viewBox="0 0 300 300">
+        <defs>
+          <path id="seal-circle" d="M 150 150 m -130 0 a 130 130 0 1 1 260 0 a 130 130 0 1 1 -260 0"/>
+        </defs>
+        <text class="seal-label">
+          <textPath href="#seal-circle" startOffset="0">★ AGENCIA GO ★ AGENCIA GO ★ AGENCIA GO ★ AGENCIA GO ★ </textPath>
+        </text>
+      </svg>
+    </div>
+
+    <div class="hero-bottom-right">
+      <p>Creamos estrategias que convierten<br>clicks en clientes y construyen<br>historias de marca que perduran.</p>
+    </div>
+  </div>
+
+  <!-- Scallop bottom: white half-circles bulging up into blue -->
+  <svg class="scallop scallop-white-fill" viewBox="0 0 1440 60" preserveAspectRatio="none"><use href="#scallop"/></svg>
+</section>
+
+<!-- ============================== SERVICES ============================== -->
+<section class="services" id="services" data-bg="light">
+  <div class="services-head">
+    <div class="services-head-left">
+      <span class="bubble bubble-orange bubble-tag">
+        <svg viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet"><use href="#bubble"/></svg>
+        <span class="bubble-text">SERVICIOS</span>
+      </span>
+      <h2 class="display-xl">SERVICIOS<br>QUE OFRECEMOS</h2>
+    </div>
+    <div class="services-head-right">
+      <p>Descubrí toda la gama de servicios de marketing diseñados para hacer crecer tu marca y maximizar tu performance.</p>
+      <a href="https://wa.me/5491162355394?text=Hola%20Agencia%20GO%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener" class="pill-btn pill-black">Pedí tu presupuesto →</a>
+    </div>
+  </div>
+
+  <div class="services-grid">
+    <a href="#contact" class="service-card service-pink">
+      <h3>BRANDING &<br>REBRANDING</h3>
+      <p>Creamos o renovamos la identidad de tu marca: logo, paleta, tipografías y todo el universo visual que te hace reconocible.</p>
+      <div class="service-illu">
+        <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="152" cy="309" rx="86" ry="12" fill="#8D7AFF" opacity="0.32"/>
+          <rect x="26" y="72" width="34" height="34" rx="9" fill="#8D7AFF" stroke="#181351" stroke-width="4.5" transform="rotate(-14 43 89)"/>
+          <rect x="34" y="114" width="34" height="34" rx="9" fill="#D5CBFF" stroke="#181351" stroke-width="4.5" transform="rotate(10 51 131)"/>
+          <path d="M92 160 Q 56 174, 46 208" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+          <circle cx="42" cy="216" r="19" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M30 211 q 12 -8 24 -2 M30 221 q 12 -7 25 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+          <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+          <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#181351"/>
+          <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+          <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#181351"/>
+          <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+          <clipPath id="svc1"><circle cx="150" cy="132" r="74.5"/></clipPath>
+          <g clip-path="url(#svc1)">
+            <g fill="#181351">
+              <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+              <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+              <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+            </g>
+            <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.26">
+              <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+              <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+            </g>
+            <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.36"/>
+            <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 110 90)"/>
+            <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+          </g>
+          <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+          <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+          <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+          <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+          <path d="M127 170 Q 151 185, 175 170" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M214 142 Q 250 122, 256 84" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+          <line x1="258" y1="74" x2="258" y2="48" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M258 50 L258 34 L234 26" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="198" y="8" width="56" height="24" rx="12" fill="#D5CBFF" stroke="#181351" stroke-width="5" transform="rotate(-9 226 20)"/>
+          <path d="M216 32 q -2 13 6 15 q 8 -2 6 -17" fill="#8D7AFF" stroke="#181351" stroke-width="3.5" stroke-linejoin="round"/>
+          <circle cx="258" cy="76" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M247 69 q 11 -8 23 -2 M247 79 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="service-arrow">→</span>
+    </a>
+
+    <a href="#contact" class="service-card service-blue">
+      <h3>PRODUCCIÓN<br>DE CONTENIDO</h3>
+      <p>Vamos hasta tu local a grabar. Edición de video y de imagen profesional para que tu marca se vea impecable.</p>
+      <div class="service-illu">
+        <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="152" cy="309" rx="86" ry="12" fill="#0F0B3A" opacity="0.7"/>
+          <path d="M46 66 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z" fill="#B9AAFF"/>
+          <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#B9AAFF" stroke-width="18" stroke-linecap="round"/>
+          <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#B9AAFF"/>
+          <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#B9AAFF" stroke-width="18" stroke-linecap="round"/>
+          <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#B9AAFF"/>
+          <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#D5CBFF" stroke-width="3.5"/>
+          <clipPath id="svc2"><circle cx="150" cy="132" r="74.5"/></clipPath>
+          <g clip-path="url(#svc2)">
+            <g fill="#181351">
+              <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+              <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+              <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+            </g>
+            <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.28">
+              <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+              <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+            </g>
+            <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.4"/>
+            <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.45" transform="rotate(-35 110 90)"/>
+            <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+          </g>
+          <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.6"/>
+          <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.6"/>
+          <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+          <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+          <path d="M127 170 Q 151 185, 175 170" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M96 170 Q 82 188, 84 204" fill="none" stroke="#B9AAFF" stroke-width="16" stroke-linecap="round"/>
+          <path d="M204 170 Q 218 188, 216 204" fill="none" stroke="#B9AAFF" stroke-width="16" stroke-linecap="round"/>
+          <rect x="90" y="178" width="120" height="62" rx="15" fill="#D5CBFF" stroke="#181351" stroke-width="4.5"/>
+          <rect x="104" y="162" width="34" height="20" rx="6" fill="#D5CBFF" stroke="#181351" stroke-width="4"/>
+          <rect x="118" y="155" width="14" height="9" rx="3" fill="#181351"/>
+          <circle cx="171" cy="209" r="28" fill="#181351"/>
+          <circle cx="171" cy="209" r="20" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+          <circle cx="171" cy="209" r="9" fill="#181351"/>
+          <circle cx="164" cy="202" r="5" fill="#F4F1FF"/>
+          <circle cx="115" cy="196" r="7.5" fill="#8D7AFF" stroke="#181351" stroke-width="3"/>
+          <rect x="105" y="212" width="26" height="11" rx="5.5" fill="#181351"/>
+          <circle cx="84" cy="208" r="18" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M73 202 q 11 -7 23 -1 M73 211 q 11 -6 22 -1" fill="none" stroke="#181351" stroke-width="2.8" stroke-linecap="round"/>
+          <circle cx="216" cy="208" r="18" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M205 202 q 11 -7 23 -1 M205 211 q 11 -6 22 -1" fill="none" stroke="#181351" stroke-width="2.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="service-arrow">→</span>
+    </a>
+
+    <a href="#contact" class="service-card service-yellow">
+      <h3>CONTENIDO<br>PARA REDES</h3>
+      <p>Creación de contenido estratégico y grabación pensada para crecer: piezas alineadas a tus objetivos de marca.</p>
+      <div class="service-illu">
+        <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="152" cy="309" rx="86" ry="12" fill="#8D7AFF" opacity="0.32"/>
+          <circle cx="54" cy="92" r="21" fill="#F4F1FF" stroke="#181351" stroke-width="4.5"/>
+          <path d="M45 111 h18 M47 119 h14" stroke="#181351" stroke-width="4.5" stroke-linecap="round"/>
+          <path d="M54 61 v-11 M28 76 l-9 -7 M80 76 l9 -7" stroke="#181351" stroke-width="4" stroke-linecap="round"/>
+          <path d="M92 160 Q 56 174, 46 208" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+          <circle cx="42" cy="216" r="19" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M30 211 q 12 -8 24 -2 M30 221 q 12 -7 25 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+          <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+          <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#181351"/>
+          <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+          <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#181351"/>
+          <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+          <clipPath id="svc3"><circle cx="150" cy="132" r="74.5"/></clipPath>
+          <g clip-path="url(#svc3)">
+            <g fill="#181351">
+              <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+              <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+              <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+            </g>
+            <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.26">
+              <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+              <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+            </g>
+            <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.36"/>
+            <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 110 90)"/>
+            <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+          </g>
+          <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+          <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+          <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+          <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+          <path d="M127 170 Q 151 185, 175 170" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M214 144 Q 244 126, 250 100" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+          <g transform="rotate(8 252 64)">
+            <rect x="222" y="14" width="60" height="100" rx="15" fill="#181351"/>
+            <rect x="230" y="27" width="44" height="70" rx="6" fill="#ECE6FF"/>
+            <rect x="235" y="32" width="16" height="16" rx="3.5" fill="#B9AAFF"/>
+            <rect x="254" y="32" width="16" height="16" rx="3.5" fill="#8D7AFF"/>
+            <rect x="235" y="51" width="16" height="16" rx="3.5" fill="#8D7AFF"/>
+            <rect x="254" y="51" width="16" height="16" rx="3.5" fill="#B9AAFF"/>
+            <rect x="235" y="70" width="35" height="7" rx="3.5" fill="#B9AAFF"/>
+            <rect x="235" y="81" width="24" height="6" rx="3" fill="#D5CBFF"/>
+            <circle cx="252" cy="106" r="4" fill="#ECE6FF"/>
+          </g>
+          <ellipse cx="237" cy="92" rx="9" ry="14" fill="#F4F1FF" stroke="#181351" stroke-width="4" transform="rotate(20 237 92)"/>
+          <circle cx="254" cy="108" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M243 101 q 11 -8 23 -2 M243 111 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="service-arrow">→</span>
+    </a>
+
+    <a href="#contact" class="service-card service-orange">
+      <h3>COMMUNITY &<br>SOCIAL MEDIA</h3>
+      <p>Community manager y social media manager. Gestionamos tus redes de punta a punta para que no tengas que ocuparte de nada.</p>
+      <div class="service-illu">
+        <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="152" cy="309" rx="86" ry="12" fill="#8D7AFF" opacity="0.4"/>
+          <path d="M20 50 h50 a11 11 0 0 1 11 11 v20 a11 11 0 0 1 -11 11 h-24 l-12 13 v-13 h-14 a11 11 0 0 1 -11 -11 v-20 a11 11 0 0 1 11 -11 z" fill="#ECE6FF" stroke="#181351" stroke-width="4.5" stroke-linejoin="round"/>
+          <circle cx="33" cy="71" r="4" fill="#181351"/><circle cx="45" cy="71" r="4" fill="#181351"/><circle cx="57" cy="71" r="4" fill="#181351"/>
+          <rect x="22" y="124" width="46" height="46" rx="14" fill="#D5CBFF" stroke="#181351" stroke-width="4.5"/>
+          <circle cx="45" cy="147" r="12" fill="none" stroke="#181351" stroke-width="4.5"/>
+          <circle cx="58" cy="134" r="3.6" fill="#181351"/>
+          <path d="M256 26 c -8 -12 -27 -9 -27 7 c 0 13 17 19 27 29 c 10 -10 27 -16 27 -29 c 0 -16 -19 -19 -27 -7 z" fill="#8D7AFF" stroke="#181351" stroke-width="4.5" stroke-linejoin="round"/>
+          <path d="M92 160 Q 56 174, 46 208" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+          <circle cx="42" cy="216" r="19" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M30 211 q 12 -8 24 -2 M30 221 q 12 -7 25 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+          <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+          <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#181351"/>
+          <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+          <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#181351"/>
+          <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+          <clipPath id="svc4"><circle cx="150" cy="132" r="74.5"/></clipPath>
+          <g clip-path="url(#svc4)">
+            <g fill="#181351">
+              <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+              <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+              <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+            </g>
+            <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.26">
+              <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+              <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+            </g>
+            <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.36"/>
+            <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 110 90)"/>
+            <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+          </g>
+          <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+          <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+          <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+          <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+          <path d="M127 170 Q 151 185, 175 170" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M214 146 Q 242 128, 248 102" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+          <g transform="rotate(10 250 70)">
+            <rect x="220" y="24" width="58" height="96" rx="15" fill="#181351"/>
+            <rect x="228" y="36" width="42" height="66" rx="6" fill="#ECE6FF"/>
+            <path d="M249 56 c -7 -10 -22 -7 -22 6 c 0 11 14 16 22 23 c 8 -7 22 -12 22 -23 c 0 -13 -15 -16 -22 -6 z" fill="#8D7AFF" stroke="#181351" stroke-width="3.5" stroke-linejoin="round"/>
+            <rect x="234" y="88" width="30" height="7" rx="3.5" fill="#B9AAFF"/>
+            <circle cx="249" cy="111" r="4" fill="#ECE6FF"/>
+          </g>
+          <ellipse cx="233" cy="98" rx="9" ry="14" fill="#F4F1FF" stroke="#181351" stroke-width="4" transform="rotate(22 233 98)"/>
+          <circle cx="251" cy="114" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M240 107 q 11 -8 23 -2 M240 117 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="service-arrow">→</span>
+    </a>
+
+    <a href="#contact" class="service-card service-blue">
+      <h3>PUBLICIDAD<br>DIGITAL</h3>
+      <p>Campañas en Meta, Google y TikTok Ads. Optimizamos tu inversión para llegar a las personas correctas en la plataforma correcta.</p>
+      <div class="service-illu">
+        <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="152" cy="309" rx="86" ry="12" fill="#0F0B3A" opacity="0.7"/>
+          <path d="M48 78 l5 14 14 5 -14 5 -5 14 -5 -14 -14 -5 14 -5 z" fill="#B9AAFF"/>
+          <path d="M92 160 Q 56 174, 46 208" fill="none" stroke="#B9AAFF" stroke-width="17" stroke-linecap="round"/>
+          <circle cx="42" cy="216" r="19" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M30 211 q 12 -8 24 -2 M30 221 q 12 -7 25 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+          <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#B9AAFF" stroke-width="18" stroke-linecap="round"/>
+          <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#B9AAFF"/>
+          <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#B9AAFF" stroke-width="18" stroke-linecap="round"/>
+          <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#B9AAFF"/>
+          <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#D5CBFF" stroke-width="3.5"/>
+          <clipPath id="svc5"><circle cx="150" cy="132" r="74.5"/></clipPath>
+          <g clip-path="url(#svc5)">
+            <g fill="#181351">
+              <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+              <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+              <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+            </g>
+            <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.28">
+              <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+              <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+            </g>
+            <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.4"/>
+            <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.45" transform="rotate(-35 110 90)"/>
+            <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+          </g>
+          <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.6"/>
+          <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.6"/>
+          <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+          <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+          <path d="M127 170 Q 151 185, 175 170" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M214 146 Q 240 128, 246 108" fill="none" stroke="#B9AAFF" stroke-width="17" stroke-linecap="round"/>
+          <g transform="translate(238 110) rotate(-54)">
+            <rect x="-16" y="-10" width="20" height="20" rx="6" fill="#181351"/>
+            <path d="M0 -13 L60 -34 L60 34 L0 13 Z" fill="#D5CBFF" stroke="#181351" stroke-width="5" stroke-linejoin="round"/>
+            <ellipse cx="60" cy="0" rx="9" ry="34" fill="#B9AAFF" stroke="#181351" stroke-width="5"/>
+          </g>
+          <path d="M276 44 q 13 8 11 26 M288 34 q 19 12 15 38" fill="none" stroke="#B9AAFF" stroke-width="4.2" stroke-linecap="round"/>
+          <circle cx="248" cy="112" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M237 105 q 11 -8 23 -2 M237 115 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="service-arrow">→</span>
+    </a>
+
+    <a href="#contact" class="service-card service-pink">
+      <h3>WEB &<br>SISTEMAS</h3>
+      <p>Páginas web, tiendas online, sistemas a medida, Linktree y Google Maps Business. Tu presencia digital completa.</p>
+      <div class="service-illu">
+        <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="152" cy="309" rx="86" ry="12" fill="#8D7AFF" opacity="0.32"/>
+          <g transform="rotate(15 64 96)">
+            <g fill="#D5CBFF" stroke="#181351" stroke-width="4">
+              <rect x="55" y="58" width="18" height="20" rx="4"/>
+              <rect x="55" y="58" width="18" height="20" rx="4" transform="rotate(45 64 96)"/>
+              <rect x="55" y="58" width="18" height="20" rx="4" transform="rotate(90 64 96)"/>
+              <rect x="55" y="58" width="18" height="20" rx="4" transform="rotate(135 64 96)"/>
+              <rect x="55" y="58" width="18" height="20" rx="4" transform="rotate(180 64 96)"/>
+              <rect x="55" y="58" width="18" height="20" rx="4" transform="rotate(225 64 96)"/>
+              <rect x="55" y="58" width="18" height="20" rx="4" transform="rotate(270 64 96)"/>
+              <rect x="55" y="58" width="18" height="20" rx="4" transform="rotate(315 64 96)"/>
+            </g>
+            <circle cx="64" cy="96" r="26" fill="#D5CBFF" stroke="#181351" stroke-width="4"/>
+            <circle cx="64" cy="96" r="10.5" fill="#ECE6FF" stroke="#181351" stroke-width="4"/>
+          </g>
+          <path d="M92 160 Q 56 174, 46 208" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+          <circle cx="42" cy="216" r="19" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M30 211 q 12 -8 24 -2 M30 221 q 12 -7 25 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+          <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+          <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#181351"/>
+          <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+          <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#181351"/>
+          <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+          <clipPath id="svc6"><circle cx="150" cy="132" r="74.5"/></clipPath>
+          <g clip-path="url(#svc6)">
+            <g fill="#181351">
+              <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+              <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+              <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+            </g>
+            <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.26">
+              <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+              <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+            </g>
+            <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.36"/>
+            <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 110 90)"/>
+            <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+          </g>
+          <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+          <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+          <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+          <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+          <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+          <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+          <path d="M127 170 Q 151 185, 175 170" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+          <path d="M214 146 Q 246 128, 252 100" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+          <g transform="rotate(9 252 56)">
+            <rect x="210" y="20" width="84" height="62" rx="10" fill="#181351"/>
+            <rect x="217" y="37" width="70" height="38" rx="4" fill="#ECE6FF"/>
+            <circle cx="222" cy="28" r="3.6" fill="#B9AAFF"/>
+            <circle cx="232" cy="28" r="3.6" fill="#D5CBFF"/>
+            <circle cx="242" cy="28" r="3.6" fill="#8D7AFF"/>
+            <rect x="223" y="43" width="22" height="22" rx="3" fill="#B9AAFF"/>
+            <rect x="251" y="43" width="30" height="6" rx="3" fill="#8D7AFF"/>
+            <rect x="251" y="54" width="30" height="6" rx="3" fill="#B9AAFF"/>
+            <rect x="251" y="65" width="19" height="6" rx="3" fill="#8D7AFF"/>
+          </g>
+          <circle cx="256" cy="92" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+          <path d="M245 85 q 11 -8 23 -2 M245 95 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="service-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============================== STATS ============================== -->
+<section class="stats" data-bg="dark">
+  <div class="stat-item"><div class="stat-num">+3 años</div><div class="stat-label">De experiencia</div></div>
+  <div class="stat-divider">★</div>
+  <div class="stat-item"><div class="stat-num">+35</div><div class="stat-label">Clientes confían en nosotras</div></div>
+  <div class="stat-divider">★</div>
+  <div class="stat-item"><div class="stat-num">+15</div><div class="stat-label">Personas en el equipo</div></div>
+  <div class="stat-divider">★</div>
+  <div class="stat-item"><div class="stat-num">+50M</div><div class="stat-label">Visualizaciones de contenido</div></div>
+</section>
+
+<!-- ============================== STRATEGY QUOTE ============================== -->
+<section class="strategy-quote" data-bg="light">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <h2 class="display-xl quote-text">
+    TODO LO QUE TU MARCA NECESITA EN UN SOLO LUGAR.
+  </h2>
+  <div class="go-float go-strategy">
+    <svg viewBox="0 0 300 156" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+      <clipPath id="goPk"><circle cx="150" cy="132" r="74.5"/></clipPath>
+      <g clip-path="url(#goPk)">
+        <g fill="#181351">
+          <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+          <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+        </g>
+        <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.26">
+          <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+          <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+        </g>
+        <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.36"/>
+        <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 110 90)"/>
+        <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+      </g>
+      <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+      <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+      <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+      <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+      <circle cx="131" cy="128" r="11" fill="#181351"/><circle cx="185" cy="128" r="11" fill="#181351"/>
+      <circle cx="135.5" cy="123" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="123" r="4" fill="#F4F1FF"/>
+      <circle cx="74" cy="140" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+      <path d="M63 133 q 11 -8 23 -2 M63 143 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="226" cy="140" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+      <path d="M215 133 q 11 -8 23 -2 M215 143 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ============================== PROCESS ============================== -->
+<section class="process" data-bg="light">
+  <div class="go-float go-bob go-process">
+    <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="150" cy="312" rx="86" ry="13" fill="#8D7AFF" opacity="0.3"/>
+      <path d="M92 160 Q 56 174, 46 208" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="42" cy="216" r="19" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+      <path d="M30 211 q 12 -8 24 -2 M30 221 q 12 -7 25 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+      <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+      <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#181351"/>
+      <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+      <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#181351"/>
+      <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+      <clipPath id="goProc"><circle cx="150" cy="132" r="74.5"/></clipPath>
+      <g clip-path="url(#goProc)">
+        <g fill="#181351">
+          <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+          <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+          <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+        </g>
+        <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.26">
+          <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+          <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+        </g>
+        <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.36"/>
+        <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 110 90)"/>
+        <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+      </g>
+      <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+      <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+      <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+      <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+      <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+      <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+      <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+      <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+      <path d="M127 170 Q 151 185, 175 170" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+      <path d="M214 142 Q 252 120, 260 72" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="264" cy="60" r="21" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+      <path d="M252 52 q 12 -9 25 -2 M251 62 q 13 -8 26 -1 M253 71 q 11 -6 22 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="process-head">
+    <span class="bubble bubble-green bubble-tag center">
+      <svg viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet"><use href="#bubble"/></svg>
+      <span class="bubble-text">PROCESO</span>
+    </span>
+    <h2 class="display-xl">CÓMO<br>TRABAJAMOS</h2>
+  </div>
+  <div class="process-grid">
+    <div class="process-card">
+      <div class="process-num">01</div>
+      <h3>DESCUBRIMIENTO</h3>
+      <p>Nos reunimos para entender tu negocio, objetivos y audiencia. Investigamos a fondo tu industria y competencia.</p>
+    </div>
+    <div class="process-card">
+      <div class="process-num">02</div>
+      <h3>ESTRATEGIA</h3>
+      <p>Diseñamos un roadmap claro con tácticas, KPIs y timeline. Definimos cada acción y por qué va a funcionar.</p>
+    </div>
+    <div class="process-card">
+      <div class="process-num">03</div>
+      <h3>EJECUCIÓN</h3>
+      <p>Nuestro equipo creativo y de paid media lanza campañas, crea piezas y optimiza día a día.</p>
+    </div>
+    <div class="process-card">
+      <div class="process-num">04</div>
+      <h3>CRECIMIENTO</h3>
+      <p>Medimos, iteramos y escalamos lo que funciona. Reportes claros y reuniones quincenales con vos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PORTFOLIO ============================== -->
+<section class="portfolio" id="portfolio" data-bg="light">
+  <div class="portfolio-head">
+    <span class="bubble bubble-orange bubble-tag center">
+      <svg viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet"><use href="#bubble"/></svg>
+      <span class="bubble-text">PORTFOLIO</span>
+    </span>
+    <h2 class="display-xl">NUESTROS<br>TRABAJOS DESTACADOS</h2>
+  </div>
+
+  <!-- Case cards: 4 clientes reales con antes/después -->
+  <div class="cases-list">
+
+    <article class="case-card">
+      <div class="case-info">
+        <span class="case-tag">Tienda Swim &amp; Natación</span>
+        <h3 class="case-handle">@locosxelagua.ok</h3>
+        <p class="case-desc">Pasamos de un feed de cutouts sueltos de productos a contenido lifestyle con deportistas y campañas. El resultado: reels virales que multiplicaron vistas y seguidores.</p>
+        <div class="case-kpis">
+          <div class="case-kpi"><b>678K</b><span>vistas en un reel</span></div>
+          <div class="case-kpi"><b>+1.427</b><span>seguidores en un mes</span></div>
+          <div class="case-kpi"><b>49K</b><span>likes en un reel</span></div>
+        </div>
+      </div>
+      <div class="case-compare">
+        <figure class="case-side"><span class="case-label">ANTES</span><img src="work/locosagua-antes.jpg" alt="Antes — Locos por el Agua" loading="lazy"></figure>
+        <figure class="case-side"><span class="case-label after">DESPUÉS</span><img src="work/locosagua-despues.jpg" alt="Después — Locos por el Agua" loading="lazy"></figure>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-info">
+        <span class="case-tag">Constructora · Casas Modulares</span>
+        <h3 class="case-handle">@viviendaslapaz</h3>
+        <p class="case-desc">Construimos su identidad visual completa: sistema de placas con precios, líneas de producto definidas y campañas con storytelling de propietarios reales.</p>
+        <div class="case-kpis">
+          <div class="case-kpi"><b>100%</b><span>identidad nueva</span></div>
+          <div class="case-kpi"><b>+30</b><span>placas con precios</span></div>
+          <div class="case-kpi"><b>+50</b><span>piezas mensuales</span></div>
+        </div>
+      </div>
+      <div class="case-compare">
+        <figure class="case-side"><span class="case-label">ANTES</span><img src="work/viviendaslapaz-antes.jpg" alt="Antes — Viviendas La Paz" loading="lazy"></figure>
+        <figure class="case-side"><span class="case-label after">DESPUÉS</span><img src="work/viviendaslapaz-despues.jpg" alt="Después — Viviendas La Paz" loading="lazy"></figure>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-info">
+        <span class="case-tag">Tienda Outdoor · Kayaks</span>
+        <h3 class="case-handle">@rockerkayak</h3>
+        <p class="case-desc">Renovamos el feed con un sistema visual coherente, reels educativos y campañas con personas reales. Sumamos contenido de marca propio que generó tracción real.</p>
+        <div class="case-kpis">
+          <div class="case-kpi"><b>85K</b><span>vistas en un reel educativo</span></div>
+          <div class="case-kpi"><b>+50</b><span>reels publicados</span></div>
+          <div class="case-kpi"><b>100%</b><span>feed renovado</span></div>
+        </div>
+      </div>
+      <div class="case-compare">
+        <figure class="case-side"><span class="case-label">ANTES</span><img src="work/rockerkayak-antes.jpg" alt="Antes — Rocker Kayak" loading="lazy"></figure>
+        <figure class="case-side"><span class="case-label after">DESPUÉS</span><img src="work/rockerkayak-despues.jpg" alt="Después — Rocker Kayak" loading="lazy"></figure>
+      </div>
+    </article>
+
+    <article class="case-card">
+      <div class="case-info">
+        <span class="case-tag">Panadería Integral</span>
+        <h3 class="case-handle">@elpandelperegrino</h3>
+        <p class="case-desc">Construimos el storytelling: fotos profesionales con personas, recetas, infografías nutricionales y branding artesanal que humaniza la marca.</p>
+        <div class="case-kpis">
+          <div class="case-kpi"><b>100%</b><span>feed con branding propio</span></div>
+          <div class="case-kpi"><b>+40</b><span>piezas mensuales</span></div>
+          <div class="case-kpi"><b>+10</b><span>recetas en video</span></div>
+        </div>
+      </div>
+      <div class="case-compare">
+        <figure class="case-side"><span class="case-label">ANTES</span><img src="work/peregrino-antes.jpg" alt="Antes — El Pan del Peregrino" loading="lazy"></figure>
+        <figure class="case-side"><span class="case-label after">DESPUÉS</span><img src="work/peregrino-despues.jpg" alt="Después — El Pan del Peregrino" loading="lazy"></figure>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Strip: Reels virales -->
+  <div class="reels-section">
+    <div class="reels-section-head">
+      <h3 class="reels-head">Reels que la rompieron</h3>
+      <p class="reels-sub">Algunos hits virales que generamos para nuestros clientes.</p>
+    </div>
+    <div class="reels-grid">
+
+      <div class="reel-card">
+        <div class="reel-head">
+          <span class="reel-tag">Reel viral</span>
+          <span class="reel-badge"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> 6× promedio</span>
+        </div>
+        <div class="reel-body">
+          <img class="reel-img" src="metrics/reel-678k.jpg" alt="Captura — 678K visualizaciones" loading="lazy">
+          <div class="reel-stat">
+            <span class="reel-views">678K</span>
+            <span class="reel-views-label">visualizaciones</span>
+            <span class="reel-grow"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> +1.427 seguidores</span>
+          </div>
+        </div>
+        <p class="reel-story">Triplicamos consultas en 1 mes.</p>
+        <span class="reel-attr">@locosxelagua.ok</span>
+      </div>
+
+      <div class="reel-card">
+        <div class="reel-head">
+          <span class="reel-tag">Reel viral</span>
+          <span class="reel-badge"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> +1.285 seguidores</span>
+        </div>
+        <div class="reel-body">
+          <img class="reel-img" src="metrics/reel-290k.jpg" alt="Captura — 290K visualizaciones" loading="lazy">
+          <div class="reel-stat">
+            <span class="reel-views">290K</span>
+            <span class="reel-views-label">visualizaciones</span>
+            <span class="reel-grow"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> +3.374 interacciones</span>
+          </div>
+        </div>
+        <p class="reel-story">Crecimiento explosivo en 1 post.</p>
+        <span class="reel-attr">Cliente Agencia GO</span>
+      </div>
+
+      <div class="reel-card">
+        <div class="reel-head">
+          <span class="reel-tag">Reel destacado</span>
+          <span class="reel-badge"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> +376 seguidores</span>
+        </div>
+        <div class="reel-body">
+          <img class="reel-img" src="metrics/reel-233k.jpg" alt="Captura — 233K visualizaciones" loading="lazy">
+          <div class="reel-stat">
+            <span class="reel-views">233K</span>
+            <span class="reel-views-label">visualizaciones</span>
+            <span class="reel-grow"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> 722 interacciones</span>
+          </div>
+        </div>
+        <p class="reel-story">Mejor performance del mes.</p>
+        <span class="reel-attr">Cliente Agencia GO</span>
+      </div>
+
+      <div class="reel-card">
+        <div class="reel-head">
+          <span class="reel-tag">100% Orgánico</span>
+          <span class="reel-badge"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> Sin pauta</span>
+        </div>
+        <div class="reel-body">
+          <img class="reel-img" src="metrics/reel-146k.jpg" alt="Captura — 146K visualizaciones" loading="lazy">
+          <div class="reel-stat">
+            <span class="reel-views">146K</span>
+            <span class="reel-views-label">visualizaciones</span>
+            <span class="reel-grow"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> +64 seguidores</span>
+          </div>
+        </div>
+        <p class="reel-story">Sin pauta. Solo contenido.</p>
+        <span class="reel-attr">Cliente Agencia GO</span>
+      </div>
+
+      <div class="reel-card">
+        <div class="reel-head">
+          <span class="reel-tag">Reel educativo</span>
+          <span class="reel-badge"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> 13h play time</span>
+        </div>
+        <div class="reel-body">
+          <img class="reel-img" src="metrics/reel-85k.jpg" alt="Captura — 85K visualizaciones" loading="lazy">
+          <div class="reel-stat">
+            <span class="reel-views">85K</span>
+            <span class="reel-views-label">visualizaciones</span>
+            <span class="reel-grow"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> +259 acciones perfil</span>
+          </div>
+        </div>
+        <p class="reel-story">Educar también vende.</p>
+        <span class="reel-attr">@rockerkayak</span>
+      </div>
+
+      <div class="reel-card">
+        <div class="reel-head">
+          <span class="reel-tag">Reel destacado</span>
+          <span class="reel-badge"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> +138 seguidores</span>
+        </div>
+        <div class="reel-body">
+          <img class="reel-img" src="metrics/reel-70k.jpg" alt="Captura — 70K visualizaciones" loading="lazy">
+          <div class="reel-stat">
+            <span class="reel-views">70K</span>
+            <span class="reel-views-label">visualizaciones</span>
+            <span class="reel-grow"><svg class="up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7 M9 7 H17 V15"/></svg> +138 seguidores</span>
+          </div>
+        </div>
+        <p class="reel-story">1 semana en tendencia.</p>
+        <span class="reel-attr">Cliente Agencia GO</span>
+      </div>
+
+    </div>
+  </div>
+  <!-- Scallop: white half-circles bulging up into cream -->
+  <svg class="scallop scallop-white-fill" viewBox="0 0 1440 60" preserveAspectRatio="none"><use href="#scallop"/></svg>
+</section>
+
+<!-- ============================== TEAM ============================== -->
+<section class="team" id="about" data-bg="light">
+  <div class="team-head">
+    <h2 class="display-xl team-h2">CONOCÉ A NUESTRO<br>EQUIPO APASIONADO
+      <span class="bubble bubble-blue bubble-tag inline">
+        <svg viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet"><use href="#bubble"/></svg>
+        <span class="bubble-text">EQUIPO</span>
+      </span>
+    </h2>
+  </div>
+
+  <div class="team-grid">
+    <div class="team-card team-pink-light">
+      <div class="team-avatar"><img src="team/aria.jpg" alt="Aria" loading="lazy"></div>
+      <h3>ARIA</h3><p>Founder & Directora de Operaciones</p>
+    </div>
+
+    <div class="team-card team-blue-light">
+      <div class="team-avatar"><img src="team/maricela.jpg" alt="Maricela" loading="lazy"></div>
+      <h3>MARICELA</h3><p>Founder & Directora Creativa</p>
+    </div>
+
+    <div class="team-card team-yellow-light">
+      <div class="team-avatar"><img src="team/luz.jpg" alt="Luz" loading="lazy"></div>
+      <h3>LUZ</h3><p>Coordinadora & Community Manager</p>
+    </div>
+
+    <div class="team-card team-orange-light">
+      <div class="team-avatar"><img src="team/sofia.jpg" alt="Sofía" loading="lazy"></div>
+      <h3>SOFÍA</h3><p>Creadora de Contenido, CM & Estrategia</p>
+    </div>
+
+    <div class="team-card team-yellow-strong">
+      <div class="team-avatar"><img src="team/valeria.jpg" alt="Valeria" loading="lazy"></div>
+      <h3>VALERIA</h3><p>Community Manager</p>
+    </div>
+
+    <div class="team-card team-blue-strong">
+      <div class="team-avatar"><img src="team/francesca.jpg" alt="Francesca" loading="lazy"></div>
+      <h3>FRANCESCA</h3><p>Community Manager</p>
+    </div>
+
+    <div class="team-card team-editoras">
+      <div class="editoras-num">+10</div>
+      <div class="editoras-info">
+        <h3>EDITORAS</h3>
+        <p>Detrás de cada pieza, editando tu contenido</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scallop: pink half-circles bulging up into white -->
+  <svg class="scallop scallop-pink-fill" viewBox="0 0 1440 60" preserveAspectRatio="none"><use href="#scallop"/></svg>
+</section>
+
+<!-- ============================== TESTIMONIALS ============================== -->
+<section class="testimonials" data-bg="light">
+  <div class="testimonials-head">
+    <span class="bubble bubble-orange bubble-tag center">
+      <svg viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet"><use href="#bubble"/></svg>
+      <span class="bubble-text">TESTIMONIOS</span>
+    </span>
+    <h2 class="display-xl">MARCAS QUE<br>CONFÍAN EN NOSOTROS</h2>
+  </div>
+
+  <div class="testimonial-marquee">
+    <div class="testimonial-track">
+      <article class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-body">"El equipo es súper atento y las chicas muy copadas. Están presentes para todo y cada detalle. Logré muchas consultas, seguidores y visualizaciones de perfil."</p>
+        <div class="t-author"><strong>Cliente de Agencia GO</strong><span>Reseña verificada</span></div>
+      </article>
+      <article class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-body">"Estoy muy contento de que me las hayan recomendado. Tienen un trato súper cordial y están en todos los detalles. Felices de trabajar con ustedes."</p>
+        <div class="t-author"><strong>Cliente de Agencia GO</strong><span>Reseña verificada</span></div>
+      </article>
+      <article class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-body">"Trabajar con Agencia GO viene siendo una experiencia muy positiva. Siempre atentas, predispuestas y con buena comunicación. Valoramos el compromiso."</p>
+        <div class="t-author"><strong>Cliente de Agencia GO</strong><span>Reseña verificada</span></div>
+      </article>
+      <article class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-body">"Me habían robado la cuenta y no tenía trabajo. Con mucho profesionalismo, planificación y estrategia, no solo la recuperaron sino que hoy estoy creciendo."</p>
+        <div class="t-author"><strong>Cliente de Agencia GO</strong><span>Reseña verificada</span></div>
+      </article>
+      <!-- duplicados para loop seamless -->
+      <article class="testimonial-card" aria-hidden="true">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-body">"El equipo es súper atento y las chicas muy copadas. Están presentes para todo y cada detalle. Logré muchas consultas, seguidores y visualizaciones de perfil."</p>
+        <div class="t-author"><strong>Cliente de Agencia GO</strong><span>Reseña verificada</span></div>
+      </article>
+      <article class="testimonial-card" aria-hidden="true">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-body">"Estoy muy contento de que me las hayan recomendado. Tienen un trato súper cordial y están en todos los detalles. Felices de trabajar con ustedes."</p>
+        <div class="t-author"><strong>Cliente de Agencia GO</strong><span>Reseña verificada</span></div>
+      </article>
+      <article class="testimonial-card" aria-hidden="true">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-body">"Trabajar con Agencia GO viene siendo una experiencia muy positiva. Siempre atentas, predispuestas y con buena comunicación. Valoramos el compromiso."</p>
+        <div class="t-author"><strong>Cliente de Agencia GO</strong><span>Reseña verificada</span></div>
+      </article>
+      <article class="testimonial-card" aria-hidden="true">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-body">"Me habían robado la cuenta y no tenía trabajo. Con mucho profesionalismo, planificación y estrategia, no solo la recuperaron sino que hoy estoy creciendo."</p>
+        <div class="t-author"><strong>Cliente de Agencia GO</strong><span>Reseña verificada</span></div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Scallop: white half-circles bulging up into pink -->
+  <svg class="scallop scallop-white-fill" viewBox="0 0 1440 60" preserveAspectRatio="none"><use href="#scallop"/></svg>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="faq" id="blog" data-bg="light">
+  <div class="go-float go-bob go-faq">
+    <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="150" cy="312" rx="86" ry="13" fill="#8D7AFF" opacity="0.3"/>
+      <path d="M92 160 Q 56 174, 46 208" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="42" cy="216" r="19" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+      <path d="M30 211 q 12 -8 24 -2 M30 221 q 12 -7 25 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+      <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+      <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#181351"/>
+      <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+      <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#181351"/>
+      <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+      <clipPath id="goFaq"><circle cx="150" cy="132" r="74.5"/></clipPath>
+      <g clip-path="url(#goFaq)">
+        <g fill="#181351">
+          <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+          <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+          <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+        </g>
+        <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.26">
+          <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+          <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+        </g>
+        <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.36"/>
+        <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 110 90)"/>
+        <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+      </g>
+      <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+      <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+      <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+      <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+      <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+      <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+      <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+      <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+      <path d="M127 170 Q 151 185, 175 170" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+      <path d="M214 142 Q 252 120, 260 72" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="264" cy="60" r="21" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+      <path d="M252 52 q 12 -9 25 -2 M251 62 q 13 -8 26 -1 M253 71 q 11 -6 22 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="faq-head">
+    <h2 class="display-xl">PREGUNTAS<br>FRECUENTES
+      <span class="bubble bubble-orange bubble-tag inline small">
+        <svg viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet"><use href="#bubble"/></svg>
+        <span class="bubble-text">BLOG</span>
+      </span>
+    </h2>
+  </div>
+
+  <div class="faq-list">
+    <details open class="faq-item">
+      <summary><span>¿VIENEN A GRABAR A MI LOCAL O DEBO ENVIARLES EL MATERIAL?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">¡Nos encargamos de absolutamente todo! Nos desplazamos hasta tu locación para realizar las jornadas de grabación. No tenés que preocuparte por producir contenido ni enviarnos nada; nuestro equipo gestiona la producción integral para que el resultado sea profesional y coherente con tu marca. (Sujeto a disponibilidad según la ubicación).</div>
+    </details>
+    <details class="faq-item">
+      <summary><span>¿HACEN PAUTA PUBLICITARIA EN TODAS LAS PLATAFORMAS?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">Gestionamos campañas en Google, Meta (Instagram y Facebook) y TikTok Ads según lo que dicte tu estrategia. Nos encargamos de que tu inversión realmente te dé resultados, optimizando el presupuesto para que llegues a las personas indicadas en la plataforma correcta.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span>¿CUÁNTO TIEMPO LE TENGO QUE DEDICAR YO AL MARKETING?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">Nuestra meta es que te desentiendas de la operatividad. Tu participación es mínima pero estratégica: solo necesitamos un meet mensual para alinear objetivos y tu aprobación final de los contenidos. Del guion, la edición, el posteo y la estrategia nos ocupamos nosotras.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span>¿EN CUÁNTO TIEMPO EMPEZARÉ A VER RESULTADOS?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">Es relativo y depende 100% de tus objetivos y de la estrategia aplicada (si es contenido puramente orgánico o si incluimos pauta publicitaria). En nuestra reunión inicial analizamos tu caso para establecer metas claras, pero siempre priorizamos un crecimiento sólido y real sobre promesas vacías.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span>¿LOS PLANES SON MENSUALES O HAY CONTRATO DE PERMANENCIA?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">Trabajamos con planes mensuales para tu comodidad. Sin embargo, siempre avisamos que el tiempo ideal para empezar a visualizar resultados contundentes es de 3 a 6 meses: es el tiempo que el mercado y la estrategia necesitan para madurar.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span>¿ME ENTREGAN LOS ARCHIVOS ORIGINALES DE LO QUE GRABAN?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">¡Totalmente! Todo el material generado es tuyo. No solo te entregamos las piezas finales listas para publicar, sino que guardamos todo en un Drive exclusivo para vos: archivos terminados, ediciones y hasta los crudos (material sin editar). La transparencia y el acceso a tu contenido son prioridad para nosotras.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span>¿CÓMO SÉ QUÉ ESTÁ PASANDO CON MI CUENTA DURANTE EL MES?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">La comunicación es constante. Además de nuestro meet mensual para analizar resultados y proyectar el siguiente mes, mantenemos canales abiertos para resolver dudas puntuales en el día a día. Estamos presentes en cada paso, por lo que nunca vas a sentir que tu cuenta está en "piloto automático" sin supervisión.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span>¿TRABAJAN CON CUALQUIER TIPO DE RUBRO O NEGOCIO?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">Sí, tenemos experiencia en una gran variedad de nichos. Contamos con un equipo especializado que se capacita a fondo en la industria de cada cliente antes de empezar. No importa el sector: nos sumergimos en tu negocio para entenderlo como si fuera nuestro y desarrollar la estrategia que mejor funcione para tu rubro.</div>
+    </details>
+    <details class="faq-item">
+      <summary><span>¿LA INVERSIÓN EN PUBLICIDAD ESTÁ INCLUIDA EN EL PLAN?</span><span class="faq-icon"></span></summary>
+      <div class="faq-body">Nuestros planes incluyen la gestión estratégica de la pauta publicitaria (el armado, seguimiento y optimización de los anuncios). El presupuesto destinado a la inversión —lo que se le paga directamente a Meta, Google o TikTok— es adicional y lo definimos en conjunto según tus posibilidades y objetivos de crecimiento.</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============================== FINAL CTA ============================== -->
+<section class="final-cta" data-bg="light">
+  <span class="bubble bubble-orange bubble-tag final-left">
+    <svg viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet"><use href="#bubble"/></svg>
+    <span class="bubble-text">BRANDING</span>
+  </span>
+  <span class="bubble bubble-green bubble-tag final-right">
+    <svg viewBox="0 0 360 140" preserveAspectRatio="xMidYMid meet"><use href="#bubble"/></svg>
+    <span class="bubble-text">MARKETING</span>
+  </span>
+
+  <svg class="confetti c1" viewBox="0 0 40 40"><path d="M20 0 L24 16 L40 20 L24 24 L20 40 L16 24 L0 20 L16 16 Z" fill="#0B0B0F"/></svg>
+  <svg class="confetti c2" viewBox="0 0 20 60"><rect width="6" height="60" fill="#8D7AFF" transform="rotate(20 3 30)"/></svg>
+  <svg class="confetti c3" viewBox="0 0 60 20"><rect width="60" height="6" fill="#0B0B0F" transform="rotate(-15 30 3)"/></svg>
+
+  <h2 class="display-xl cta-headline">HAGAMOS CRECER<br>TU MARCA JUNTOS</h2>
+  <a href="https://wa.me/5491162355394?text=Hola%20Agencia%20GO%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener" class="pill-btn pill-pink large">Empezar ahora →</a>
+
+  <div class="cta-robot">
+    <svg viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="150" cy="312" rx="86" ry="13" fill="#8D7AFF" opacity="0.3"/>
+      <path d="M236 40 l4 12 12 4 -12 4 -4 12 -4 -12 -12 -4 12 -4 z" fill="#8D7AFF"/>
+      <path d="M54 60 l3.5 10 10 3.5 -10 3.5 -3.5 10 -3.5 -10 -10 -3.5 10 -3.5 z" fill="#B9AAFF"/>
+      <path d="M90 158 Q 58 124, 48 80" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="46" cy="70" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+      <path d="M35 63 q 11 -8 23 -2 M35 73 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+      <path d="M210 158 Q 242 124, 252 80" fill="none" stroke="#181351" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="254" cy="70" r="20" fill="#F4F1FF" stroke="#181351" stroke-width="5.5"/>
+      <path d="M243 63 q 11 -8 23 -2 M243 73 q 12 -7 24 -1" fill="none" stroke="#181351" stroke-width="3" stroke-linecap="round"/>
+      <path d="M126 198 Q 112 250, 104 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+      <path d="M68 290 Q 64 268, 92 266 Q 122 264, 126 286 Q 128 302, 100 304 Q 70 306, 68 290 Z" fill="#181351"/>
+      <path d="M178 198 Q 192 250, 200 282" fill="none" stroke="#181351" stroke-width="18" stroke-linecap="round"/>
+      <path d="M176 290 Q 172 268, 202 266 Q 232 264, 236 286 Q 238 302, 210 304 Q 178 306, 176 290 Z" fill="#181351"/>
+      <circle cx="150" cy="132" r="76" fill="#B9AAFF" stroke="#181351" stroke-width="3.5"/>
+      <clipPath id="goCel"><circle cx="150" cy="132" r="74.5"/></clipPath>
+      <g clip-path="url(#goCel)">
+        <g fill="#181351">
+          <path d="M64 80 q 22 -10 32 8 q 8 16 -4 30 q 16 18 -2 40 q -22 12 -34 -10 q -10 -30 0 -54 q 2 -16 8 -14 z"/>
+          <path d="M204 70 q 26 8 26 32 q -2 18 -18 24 q 12 22 -8 34 q -20 -2 -18 -28 q -8 -28 14 -48 q 10 -14 22 -14 z"/>
+          <path d="M150 196 q 18 -2 22 12 q -2 16 -22 16 q -20 0 -22 -16 q 4 -16 22 -12 z"/>
+        </g>
+        <g fill="none" stroke="#181351" stroke-width="2.6" opacity="0.26">
+          <ellipse cx="150" cy="132" rx="72" ry="30"/><ellipse cx="150" cy="132" rx="72" ry="57"/>
+          <ellipse cx="150" cy="132" rx="31" ry="72"/><line x1="78" y1="132" x2="222" y2="132"/>
+        </g>
+        <path d="M150 58 a 74 74 0 0 1 0 148 a 56 62 0 0 0 0 -148 z" fill="#8D7AFF" opacity="0.36"/>
+        <ellipse cx="110" cy="90" rx="32" ry="21" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 110 90)"/>
+        <circle cx="95" cy="78" r="8" fill="#F4F1FF" opacity="0.9"/>
+      </g>
+      <path d="M102 96 q 16 -13 34 -4" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+      <path d="M166 92 q 19 -8 34 7" fill="none" stroke="#181351" stroke-width="7.5" stroke-linecap="round"/>
+      <ellipse cx="102" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+      <ellipse cx="200" cy="150" rx="13" ry="8.5" fill="#8D7AFF" opacity="0.55"/>
+      <ellipse cx="124" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+      <ellipse cx="178" cy="126" rx="22" ry="26" fill="#F4F1FF" stroke="#181351" stroke-width="6"/>
+      <circle cx="131" cy="130" r="11" fill="#181351"/><circle cx="185" cy="130" r="11" fill="#181351"/>
+      <circle cx="135.5" cy="125" r="4" fill="#F4F1FF"/><circle cx="189.5" cy="125" r="4" fill="#F4F1FF"/>
+      <path d="M122 168 Q 151 190, 180 168" fill="none" stroke="#181351" stroke-width="6.5" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- Scallop: blue half-circles bulging up into white -->
+  <svg class="scallop scallop-blue-fill" viewBox="0 0 1440 60" preserveAspectRatio="none"><use href="#scallop"/></svg>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer" id="contact" data-bg="dark">
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h4>AGENCIA GO</h4>
+      <a href="#">Inicio</a><a href="#services">Servicios</a><a href="#portfolio">Trabajos</a><a href="#blog">Preguntas</a>
+    </div>
+    <div class="footer-col">
+      <h4>SERVICIOS</h4>
+      <a href="#services">Branding & Rebranding</a><a href="#services">Producción de Contenido</a><a href="#services">Community & Social Media</a><a href="#services">Publicidad Digital</a><a href="#services">Web & Sistemas</a>
+    </div>
+    <div class="footer-col">
+      <h4>CONTACTO</h4>
+      <p><a href="https://wa.me/5491162355394" target="_blank" rel="noopener">WhatsApp: +54 9 11 6235-5394</a></p>
+      <p>Nos movemos hasta tu local 📍</p>
+    </div>
+    <div class="footer-badge">
+      <svg class="globe" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="78" fill="#B9AAFF" stroke="#181351" stroke-width="3"/>
+        <clipPath id="sealMascotFooter"><circle cx="100" cy="100" r="76"/></clipPath>
+        <g clip-path="url(#sealMascotFooter)">
+          <g fill="#181351">
+            <path d="M48 50 q 18 -8 26 6 q 8 14 -2 26 q 12 16 -2 32 q -18 10 -28 -6 q -10 -24 0 -44 q 2 -14 6 -14 z"/>
+            <path d="M150 42 q 22 6 22 28 q -2 14 -16 20 q 10 18 -6 28 q -16 0 -16 -22 q -8 -22 12 -38 q 8 -12 18 -12 z"/>
+            <path d="M100 156 q 16 -2 18 12 q -2 12 -18 12 q -16 0 -18 -12 q 4 -12 18 -12 z"/>
+          </g>
+          <g fill="none" stroke="#181351" stroke-width="2.2" opacity="0.26">
+            <ellipse cx="100" cy="100" rx="76" ry="32"/>
+            <ellipse cx="100" cy="100" rx="76" ry="58"/>
+            <ellipse cx="100" cy="100" rx="34" ry="76"/>
+            <line x1="24" y1="100" x2="176" y2="100"/>
+          </g>
+          <path d="M100 28 a 76 76 0 0 1 0 152 a 56 60 0 0 0 0 -152 z" fill="#8D7AFF" opacity="0.36"/>
+          <ellipse cx="64" cy="62" rx="26" ry="18" fill="#F4F1FF" opacity="0.4" transform="rotate(-35 64 62)"/>
+          <circle cx="52" cy="52" r="6" fill="#F4F1FF" opacity="0.9"/>
+        </g>
+        <path d="M56 72 q 14 -11 30 -4" fill="none" stroke="#181351" stroke-width="6" stroke-linecap="round"/>
+        <path d="M114 70 q 16 -7 30 6" fill="none" stroke="#181351" stroke-width="6" stroke-linecap="round"/>
+        <ellipse cx="78" cy="100" rx="18" ry="22" fill="#F4F1FF" stroke="#181351" stroke-width="5"/>
+        <ellipse cx="122" cy="100" rx="18" ry="22" fill="#F4F1FF" stroke="#181351" stroke-width="5"/>
+        <circle cx="84" cy="103" r="9" fill="#181351"/>
+        <circle cx="128" cy="103" r="9" fill="#181351"/>
+        <circle cx="87.5" cy="98" r="3.4" fill="#F4F1FF"/>
+        <circle cx="131.5" cy="98" r="3.4" fill="#F4F1FF"/>
+        <path d="M80 138 Q 100 152, 120 138" fill="none" stroke="#181351" stroke-width="5.5" stroke-linecap="round"/>
+      </svg>
+      <svg class="seal-text" viewBox="0 0 300 300">
+        <defs>
+          <path id="footer-seal-circle" d="M 150 150 m -130 0 a 130 130 0 1 1 260 0 a 130 130 0 1 1 -260 0"/>
+        </defs>
+        <text class="seal-label">
+          <textPath href="#footer-seal-circle" startOffset="0">★ AGENCIA GO ★ AGENCIA GO ★ AGENCIA GO ★ AGENCIA GO ★ </textPath>
+        </text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="footer-legal">
+    <a href="#">Términos & Condiciones</a>
+    <a href="#">Política de Privacidad</a>
+    <span>© 2026 Agencia GO. Todos los derechos reservados.</span>
+  </div>
+</footer>
+
+<script src="script.js?v=10"></script>
+</body>
+</html>
