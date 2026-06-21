@@ -1137,18 +1137,18 @@ body[data-nav="dark"] .logo-mark { background-color: var(--navy); }
 
 .final-left {
   position: absolute;
-  top: 80px;
-  left: 4%;
-  width: 240px;
-  transform: rotate(-8deg);
+  top: 24px;
+  left: 3%;
+  width: 220px;
+  transform: rotate(-10deg);
   z-index: 2;
 }
 .final-right {
   position: absolute;
-  top: 130px;
-  right: 4%;
-  width: 260px;
-  transform: rotate(6deg);
+  top: 36px;
+  right: 3%;
+  width: 230px;
+  transform: rotate(8deg);
   z-index: 2;
 }
 

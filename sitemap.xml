@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://agenciago.com.ar/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -15,5 +15,11 @@
       <image:loc>https://agenciago.com.ar/go-logo.png</image:loc>
       <image:title>Logo Agencia GO</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://agenciago.com.ar/privacy.html</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
