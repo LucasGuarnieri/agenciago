@@ -181,7 +181,7 @@ body[data-nav="dark"] .logo-mark { background-color: var(--navy); }
   background: var(--blue);
   min-height: 100vh;
   max-height: 100vh;
-  padding: 110px clamp(40px, 6vw, 100px) 90px;
+  padding: clamp(140px, 15vh, 200px) clamp(40px, 6vw, 100px) 90px;
   position: relative;
   overflow: hidden;
   display: flex;

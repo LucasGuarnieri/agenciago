@@ -4,7 +4,7 @@
 
 ## Información clave
 
-- **Nombre:** Agencia GO (también: AgenciaGO, Agencia GO Studio)
+- **Nombre:** Agencia GO (también: AgenciaGO)
 - **Tipo:** Agencia de marketing digital
 - **Ubicación:** Argentina (cobertura nacional)
 - **Idioma:** Español (es-AR)
