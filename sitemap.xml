@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://agenciago.com.ar/</loc>
+    <loc>https://agenciago.vercel.app/</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://agenciago.com.ar/og-image.png</image:loc>
+      <image:loc>https://agenciago.vercel.app/og-image.png</image:loc>
       <image:title>Agencia GO — Marketing Digital, Contenido y Ads en Argentina</image:title>
       <image:caption>Agencia argentina de marketing digital, branding, contenido para redes y publicidad paga.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://agenciago.com.ar/go-logo.png</image:loc>
+      <image:loc>https://agenciago.vercel.app/go-logo.png</image:loc>
       <image:title>Logo Agencia GO</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://agenciago.com.ar/privacy.html</loc>
+    <loc>https://agenciago.vercel.app/privacy.html</loc>
     <lastmod>2026-06-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
